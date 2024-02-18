@@ -1,0 +1,85 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nevbar {
+  height: 40px;
+  background-color: #1d1d1f;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.left {
+  display: flex;
+  gap: 60px;
+}
+.right {
+  display: flex;
+  gap: 60px;
+}
+.second {
+  display: none;
+}
+.java {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: red; */
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .center {
+    display: none;
+  }
+  .java {
+    color: white;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: 2px solid white;
+    width: 70px;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    padding-top: 7px;
+    background-color: black;
+    padding-left: 10px;
+    display: block;
+  }
+  .nevbar {
+    justify-content: end;
+  }
+  .fullscreen {
+    background-color: #1d1d1f;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.9s;
+    color: white;
+    font-size: 40px;
+    display: block;
+  }
+  .second {
+    display: block;
+  }
+  .nevbar {
+    z-index: 100;
+    position: relative;
+    justify-content: end;
+  }
+  .fullscreen:hover {
+    background-color: skyblue;
+    color: black;
+  }
+}
